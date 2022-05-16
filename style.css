@@ -1,5 +1,8 @@
 /* Global */
 :root {
+  /* Background Color */
+  --background-color: #e1dfdd;
+
   /* Color */
   --color-white: #ffffff;
   --color-light-white: #eeeeee;
@@ -15,11 +18,9 @@
   --color-black: #000000;
 
   /* Font size */
-  --font-large: 48px;
-  --font-medium: 28px;
-  --font-regular: 18px;
-  --font-small: 16px;
-  --font-micro: 14px;
+  --font-large: 144px;
+  --font-medium: 40px;
+  --font-regular: 22px;
 
   /* Font weight */
   --weight-bold: 700;
@@ -41,12 +42,19 @@
 /* Universal tags  */
 * {
   box-sizing: border-box;
+  font-size: var(--font-regular);
 }
 
 body {
   font-family: "Open Sans", sans-serif;
   margin: 0;
   cursor: default;
+  background-color: var(--background-color);
+}
+
+section {
+  max-width: 1600px;
+  margin: 0 auto;
 }
 
 a {
@@ -56,6 +64,7 @@ a {
 
 ul {
   padding-left: 0;
+  margin: 0;
 }
 
 li {
@@ -72,23 +81,41 @@ button {
 
 /* Typography */
 
-h1 {
+.large_text {
   font-size: var(--font-large);
-  font-weight: var(--weight-bold);
+  font-weight: var(--weight-semi-bold);
   color: var(--color-black);
-  margin: 16px 0;
+  letter-spacing: -8px;
+  line-height: 130px;
 }
 
-h2 {
+.medium_text {
   font-size: var(--font-medium);
   font-weight: var(--weight-semi-bold);
   color: var(--color-black);
   margin: 8px 0;
 }
 
-h3 {
+.regular_text {
   font-size: var(--font-regular);
   font-weight: var(--weight-regular);
   color: var(--color-black);
   margin: 4px 0;
+}
+
+/* Navbar */
+
+#navbar {
+  max-width: 1600px;
+  display: flex;
+  justify-content: space-between;
+  margin: 16px auto;
+}
+
+.navbar_menu {
+  display: flex;
+}
+
+/* Main */
+#main {
 }
