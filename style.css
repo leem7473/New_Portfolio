@@ -84,8 +84,8 @@ button {
   font-size: var(--font-large);
   font-weight: var(--weight-semi-bold);
   color: var(--color-black);
-  letter-spacing: -8px;
-  line-height: 130px;
+  letter-spacing: -5px;
+  line-height: 140px;
 }
 
 .medium_text {
@@ -171,7 +171,7 @@ button {
   row-gap: 60px;
 }
 
-.page_numbers {
+.first_numbers {
   grid-row-start: 1;
   grid-row-end: 3;
 }
@@ -196,4 +196,33 @@ button {
 
 .desc_sub_content p {
   margin-bottom: 40px;
+}
+
+/* portfolio */
+#portfolio {
+  margin-top: 200px;
+}
+
+.page_numbers {
+  max-width: 1200px;
+  display: flex;
+  justify-content: space-between;
+}
+
+.portfolio_container {
+  margin-top: 150px;
+}
+
+.portfolio_title {
+  text-decoration: underline;
+}
+
+.portfolio_content {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 50px;
+}
+
+.portfolio_title_sub {
+  margin: 70px 0 0 130px;
 }
