@@ -23,9 +23,9 @@
   --font-regular: 22px;
 
   /* Font weight */
-  --weight-bold: 500;
-  --weight-semi-bold: 400;
-  --weight-regular: 300;
+  --weight-bold: 700;
+  --weight-semi-bold: 600;
+  --weight-regular: 400;
 
   /* Size */
   --size-border-radius: 4px;
@@ -103,7 +103,6 @@ button {
 
 .text_underline {
   border-bottom: 15px solid var(--color-black);
-  margin-top: 2px;
 }
 
 /* Navbar */
@@ -114,7 +113,7 @@ button {
   justify-content: space-between;
   margin: 0 auto;
   padding: 30px;
-  font-weight: var(--weight-semi-bold);
+  font-weight: var(--weight-bold);
 }
 
 .navbar_menu {
@@ -128,7 +127,7 @@ button {
 }
 
 .main_desc {
-  font-weight: var(--weight-semi-bold);
+  font-weight: var(--weight-bold);
   position: absolute;
   left: 20%;
   display: flex;
@@ -178,6 +177,7 @@ button {
 .first_numbers {
   grid-row-start: 1;
   grid-row-end: 3;
+  font-weight: var(--weight-bold);
 }
 
 .profile_desc p {
@@ -211,6 +211,7 @@ button {
   max-width: 1200px;
   display: flex;
   justify-content: space-between;
+  font-weight: var(--weight-bold);
 }
 
 .portfolio_container {
