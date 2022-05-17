@@ -71,6 +71,12 @@ li {
   list-style: none;
 }
 
+p {
+  margin: 0;
+  letter-spacing: -1px;
+  line-height: 25px;
+}
+
 button {
   background-color: transparent;
   cursor: pointer;
@@ -109,7 +115,9 @@ button {
   max-width: 1600px;
   display: flex;
   justify-content: space-between;
-  margin: 16px auto;
+  margin: 0 auto;
+  padding: 30px;
+  font-weight: var(--weight-semi-bold);
 }
 
 .navbar_menu {
@@ -117,5 +125,43 @@ button {
 }
 
 /* Main */
+
 #main {
+  position: relative;
+}
+
+.main_desc {
+  font-weight: var(--weight-semi-bold);
+  position: absolute;
+  left: 20%;
+  display: flex;
+  justify-content: space-between;
+  top: 30px;
+}
+
+.main_desc p {
+  padding: 0 80px;
+}
+
+.main_profile {
+  margin-top: 70px;
+}
+
+.profile_image {
+  margin-top: 40px;
+}
+
+.main_bottom {
+  margin-top: 20px;
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-end;
+}
+
+.main_arrow i {
+  font-size: 100px;
+}
+
+.main_bottom_title {
+  text-align: right;
 }
