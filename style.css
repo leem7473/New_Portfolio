@@ -37,11 +37,6 @@
 /* Universal tags  */
 * {
   box-sizing: border-box;
-}
-
-/* Universal tags  */
-* {
-  box-sizing: border-box;
   font-size: var(--font-regular);
 }
 
@@ -73,8 +68,6 @@ li {
 
 p {
   margin: 0;
-  letter-spacing: -1px;
-  line-height: 25px;
 }
 
 button {
@@ -164,4 +157,43 @@ button {
 
 .main_bottom_title {
   text-align: right;
+}
+
+/* Profile */
+#profile {
+  margin-top: 300px;
+}
+
+.profile_container {
+  max-width: 1500px;
+  display: grid;
+  grid-template-columns: 0.8fr 2.2fr;
+  row-gap: 60px;
+}
+
+.page_numbers {
+  grid-row-start: 1;
+  grid-row-end: 3;
+}
+
+.profile_desc p {
+  margin-bottom: 40px;
+  font-size: var(--font-medium);
+  font-weight: var(--weight-semi-bold);
+}
+
+.desc_sub {
+  display: flex;
+}
+
+.desc_sub_title {
+  flex-basis: 400px;
+}
+
+.desc_sub_content {
+  flex-basis: 550px;
+}
+
+.desc_sub_content p {
+  margin-bottom: 40px;
 }
