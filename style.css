@@ -226,3 +226,22 @@ button {
 .portfolio_title_sub {
   margin: 70px 0 0 130px;
 }
+
+/* About */
+#about {
+  margin-top: 300px;
+}
+
+.about_content {
+  width: 60%;
+}
+
+.about_content > * {
+  margin-bottom: 40px;
+}
+
+.about_self {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-end;
+}
