@@ -30,6 +30,7 @@
       crossorigin="anonymous"
     ></script>
     <script src="js/wow.min.js"></script>
+    <script src="js/script.js" defer></script>
     <script>
       new WOW().init();
     </script>
@@ -38,7 +39,7 @@
     <!-- Navbar -->
     <nav
       id="navbar"
-      class="wow fadeInDown"
+      class="navbar wow fadeInDown"
       data-wow-duration="0.5s"
       data-wow-delay="1.2s"
     >
@@ -174,9 +175,9 @@
 
     <!-- Profile -->
     <section id="profile">
-      <div class="profile_container wow fadeInDown">
-        <p class="first_numbers">01/</p>
-        <div class="profile_desc">
+      <div class="profile_container">
+        <p class="first_numbers wow fadeInDown">01/</p>
+        <div class="profile_desc wow fadeInDown">
           <p>
             Lorem, ipsum dolor sit amet consectetur adipisicing elit. Corrupti,
             atque molestiae consequuntur itaque eaque pariatur ab natus impedit.
@@ -187,24 +188,26 @@
             omnis facilis odio vel. Nulla ab laborum officiis amet ut.
           </p>
         </div>
-        <div class="desc_sub wow fadeInDown" data-wow-delay="0.6s">
-          <div class="desc_sub_title">
+        <div class="desc_sub">
+          <div class="desc_sub_title wow fadeInDown" data-wow-delay="0.6s">
             A blend of UI <br />
             and product engineering.
           </div>
           <div class="desc_sub_content">
-            <p>
+            <p class="wow fadeInDown" data-wow-delay="0.6s">
               Lorem ipsum dolor sit, amet consectetur adipisicing elit. Cum
               maiores unde eius impedit, aut ducimus eligendi! Nisi, tenetur.
               Ducimus doloremque accusantium vero distinctio vitae expedita
               provident? Nam dolor beatae obcaecati.
             </p>
-            <p>
+            <p class="wow fadeInDown" data-wow-delay="0.6s">
               Lorem ipsum dolor sit amet consectetur, adipisicing elit.
               Cupiditate eveniet omnis ut corrupti vero dignissimos atque
               praesentium? Temporibus, voluptate accusantium!
             </p>
-            <p><span class="link_underline">More about meand services</span></p>
+            <p class="wow fadeInDown" data-wow-delay="1s">
+              <span class="link_underline">More about meand services</span>
+            </p>
           </div>
         </div>
       </div>
@@ -212,7 +215,7 @@
 
     <!-- Portfolio -->
     <section id="portfolio">
-      <ul class="page_numbers">
+      <ul class="page_numbers wow fadeInUp" data-wow-delay="1s">
         <li>02/</li>
         <li>RECENT <br />PROJECTS</li>
         <li class="page_num_hide">
@@ -222,62 +225,81 @@
       </ul>
       <div class="portfolio_container">
         <div class="portfolio_content">
-          <div>
+          <div class="content_fixed">
+            <div class="title_text">
+              <span class="title_animation" style="animation-duration: 0.46s"
+                >J</span
+              >
+              <span class="title_animation" style="animation-duration: 0.53s"
+                >A</span
+              >
+              <span class="title_animation" style="animation-duration: 0.6s"
+                >N</span
+              >
+              <span class="title_animation" style="animation-duration: 0.67s"
+                >C</span
+              >
+              <span class="title_animation" style="animation-duration: 0.74s"
+                >H</span
+              >
+              <span class="title_animation" style="animation-duration: 0.81s"
+                >I</span
+              >
+            </div>
             <div class="title_text">
               <span class="title_animation" style="animation-duration: 0.46s"
                 >P</span
               >
               <span class="title_animation" style="animation-duration: 0.53s"
-                >O</span
-              >
-              <span class="title_animation" style="animation-duration: 0.6s"
                 >R</span
               >
+              <span class="title_animation" style="animation-duration: 0.6s"
+                >O</span
+              >
               <span class="title_animation" style="animation-duration: 0.67s"
-                >T</span
+                >J</span
               >
               <span class="title_animation" style="animation-duration: 0.74s"
-                >F</span
+                >E</span
               >
               <span class="title_animation" style="animation-duration: 0.81s"
-                >O</span
+                >C</span
               >
               <span class="title_animation" style="animation-duration: 0.88s"
-                >L</span
-              >
-              <span class="title_animation" style="animation-duration: 0.88s"
-                >I</span
-              >
-              <span class="title_animation" style="animation-duration: 0.88s"
-                >O</span
-              >
-            </div>
-            <div class="title_text">
-              <span class="title_animation" style="animation-duration: 0.46s"
-                >S</span
-              >
-              <span class="title_animation" style="animation-duration: 0.53s"
-                >I</span
-              >
-              <span class="title_animation" style="animation-duration: 0.6s"
                 >T</span
-              >
-              <span class="title_animation" style="animation-duration: 0.67s"
-                >E</span
               >
             </div>
             <p class="portfolio_title_sub">
-              AN ANALYSIS AND <br />
-              DISCOVERY TOOL FOR <br />
-              SPOTIFY USERS
+              팀원들과 처음으로 협업하여 <br />
+              작업했던 첫번째 프로젝트, <br />
+              잔치꾼 프로젝트입니다.
             </p>
           </div>
-          <div class="portfolio_image_area">Portfolio Image area</div>
+          <div class="portfolio_image_area">
+            <img src="images/janchi_admin.png" alt="잔치꾼 메인페이지" />
+          </div>
         </div>
         <div class="portfolio_content">
           <div>
             <div class="title_text">
               <span class="title_animation" style="animation-duration: 0.46s"
+                >C</span
+              >
+              <span class="title_animation" style="animation-duration: 0.53s"
+                >L</span
+              >
+              <span class="title_animation" style="animation-duration: 0.6s"
+                >O</span
+              >
+              <span class="title_animation" style="animation-duration: 0.67s"
+                >U</span
+              >
+              <span class="title_animation" style="animation-duration: 0.74s"
+                >D</span
+              >
+            </div>
+            <div class="title_text">
+              <span class="title_animation" style="animation-duration: 0.46s"
                 >P</span
               >
               <span class="title_animation" style="animation-duration: 0.53s"
@@ -305,101 +327,77 @@
                 >O</span
               >
             </div>
-            <div class="title_text">
-              <span class="title_animation" style="animation-duration: 0.46s"
-                >S</span
-              >
-              <span class="title_animation" style="animation-duration: 0.53s"
-                >I</span
-              >
-              <span class="title_animation" style="animation-duration: 0.6s"
-                >T</span
-              >
-              <span class="title_animation" style="animation-duration: 0.67s"
-                >E</span
-              >
-            </div>
             <p class="portfolio_title_sub">
-              AN ANALYSIS AND <br />
-              DISCOVERY TOOL FOR <br />
-              SPOTIFY USERS
+              클라우드 애니메이션과 <br />
+              자바스크립트 라이브러리들을 적용한 <br />
+              반응형 포트폴리오 사이트입니다.
             </p>
           </div>
-          <div class="portfolio_image_area">Portfolio Image area</div>
+          <div class="portfolio_image_area">
+            <img
+              src="images/cloud_portfolio.png"
+              alt="구름 포트폴리오 사이트"
+            />
+          </div>
         </div>
         <div class="portfolio_content">
           <div>
             <div class="title_text">
               <span class="title_animation" style="animation-duration: 0.46s"
-                >P</span
-              >
-              <span class="title_animation" style="animation-duration: 0.53s"
-                >O</span
-              >
-              <span class="title_animation" style="animation-duration: 0.6s"
-                >R</span
-              >
-              <span class="title_animation" style="animation-duration: 0.67s"
-                >T</span
-              >
-              <span class="title_animation" style="animation-duration: 0.74s"
-                >F</span
-              >
-              <span class="title_animation" style="animation-duration: 0.81s"
-                >O</span
-              >
-              <span class="title_animation" style="animation-duration: 0.88s"
                 >L</span
               >
-              <span class="title_animation" style="animation-duration: 0.88s"
-                >I</span
-              >
-              <span class="title_animation" style="animation-duration: 0.88s"
-                >O</span
-              >
-            </div>
-            <div class="title_text">
-              <span class="title_animation" style="animation-duration: 0.46s"
-                >S</span
-              >
               <span class="title_animation" style="animation-duration: 0.53s"
-                >I</span
+                >A</span
               >
               <span class="title_animation" style="animation-duration: 0.6s"
                 >T</span
               >
               <span class="title_animation" style="animation-duration: 0.67s"
-                >E</span
+                >I</span
+              >
+              <span class="title_animation" style="animation-duration: 0.74s"
+                >N</span
               >
             </div>
             <p class="portfolio_title_sub">
-              AN ANALYSIS AND <br />
-              DISCOVERY TOOL FOR <br />
-              SPOTIFY USERS
+              부트스트랩을 사용하여 <br />
+              반응형으로 리뉴얼한 <br />
+              중남미문화원 홈페이지입니다.
             </p>
           </div>
-          <div class="portfolio_image_area">Portfolio Image area</div>
+          <div class="portfolio_image_area">
+            <img
+              src="images/latin_main.png"
+              alt="중남미문화원 포트폴리오 사이트"
+            />
+          </div>
         </div>
       </div>
     </section>
 
     <!-- About -->
     <section id="about">
-      <ul class="page_numbers">
+      <ul class="page_numbers wow fadeInUp" data-wow-delay="1s">
         <li>03/</li>
         <li>ABOUT ME</li>
       </ul>
       <div class="about_content">
-        <p class="title_text">
-          VOLLEY <br />
-          BALL,
-        </p>
-        <div class="about_image_area">About Image Area</div>
-        <p class="title_text">
-          GAMING, <br />
-          CLASSIC
-        </p>
-        <div class="about_self">
+        <div class="title_text wow fadeInUp" data-wow-delay="1.3s">
+          <span
+            >VOLLEY <br />
+            BALL,</span
+          >
+        </div>
+        <div class="about_image_area wow fadeInUp" data-wow-delay="1.45s">
+          About Image Area
+        </div>
+        <div class="title_text wow fadeInUp" data-wow-delay="1.45s">
+          <span>
+            GAMING, <br />
+            CLASSIC
+          </span>
+        </div>
+        <div class="about_self wow fadeInUp" data-wow-delay="1.5s">
           <p>
             My hobbies take up a good portion of my leisure <br />time. I'm
             either cheering up FC Bayern Munich, <br />winning a game of FIFA
@@ -415,7 +413,7 @@
 
     <!-- Contact -->
     <section id="contact">
-      <ul class="page_numbers">
+      <ul class="page_numbers wow fadeInUp" data-wow-delay="1s">
         <li>04/</li>
         <li>WANT TO WORK <br />TOGETHER?</li>
         <li class="page_num_hide">
@@ -423,10 +421,13 @@
           MESSAGE
         </li>
       </ul>
-      <p class="contact_email title_text title_underline">
-        LJM7473@ <br />GMAIL.COM
-      </p>
-      <ul class="contact_bottom">
+      <div
+        class="contact_email title_text title_underline wow fadeInUp"
+        data-wow-delay="1.3s"
+      >
+        <span>LJM7473@ <br />GMAIL.COM</span>
+      </div>
+      <ul class="contact_bottom wow fadeInUp" data-wow-delay="1.5s">
         <li>
           Jungmin Lim <br />
           Creative Developer
