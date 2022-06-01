@@ -86,6 +86,11 @@ button {
   display: none;
 }
 
+.fixed {
+  position: fixed;
+  top: 150px;
+}
+
 /* Title text */
 .title_text span {
   font-size: var(--font-size-title);
@@ -133,6 +138,9 @@ button {
   padding: 30px 50px;
   font-weight: var(--weight-bold);
   font-size: var(--font-size-20);
+  position: sticky;
+  top: 0;
+  z-index: 1;
 }
 
 .navbar_menu {
@@ -141,22 +149,6 @@ button {
 
 .navbar_toggle_btn {
   display: none;
-}
-
-@keyframes navbar_fixed {
-  0% {
-    top: -5rem;
-  }
-  100% {
-    top: 0;
-  }
-}
-
-.navbar_fixed {
-  display: flex;
-  justify-content: space-between;
-  position: fixed;
-  animation: navbar_fixed;
 }
 
 /* Main */
@@ -272,6 +264,8 @@ button {
   justify-content: space-between;
   margin-bottom: 100px;
   gap: 60px;
+  position: relative;
+  max-height: 1500px;
 }
 
 .portfolio_title_sub {
