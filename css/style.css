@@ -265,7 +265,12 @@ button {
   margin-bottom: 100px;
   gap: 60px;
   position: relative;
-  max-height: 1500px;
+}
+
+.portfolio_title {
+  position: sticky;
+  top: 150px;
+  align-self: flex-start;
 }
 
 .portfolio_title_sub {

@@ -1,5 +1,13 @@
+// wow.js
+new WOW().init();
+
+// easeScroll
+$("html").easeScroll({
+  stepSize: 30,
+});
+
+// Navbar sub description hide
 $(document).ready(function () {
-  // Navbar sub description hide
   $(window).on("scroll", function () {
     if ($(window).scrollTop()) {
       $(".title_desc").addClass("hide");
@@ -7,10 +15,4 @@ $(document).ready(function () {
       $(".title_desc").removeClass("hide");
     }
   });
-
-  // portfolio_title scroll height
-  getScHeight = function () {
-    var scHeight = $(".portfolio_title").prop("scrollHeight");
-    console.log(scHeight);
-  };
 });
