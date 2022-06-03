@@ -15,4 +15,8 @@ $(document).ready(function () {
       $(".title_desc").removeClass("hide");
     }
   });
+
+  $(".portfolio_image_area").click(function () {
+    $(".portfolio_sub_page").addClass("page_up");
+  });
 });

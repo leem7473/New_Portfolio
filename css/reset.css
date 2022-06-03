@@ -1,0 +1,91 @@
+/* Global */
+:root {
+  /* Background Color */
+  --background-color: #e1dfdd;
+
+  /* Color */
+  --color-white: #ffffff;
+  --color-light-white: #eeeeee;
+  --color-dark-white: #bdbdbd;
+  --color-pink: #fe918d;
+  --color-dark-pink: #ff6863;
+  --color-dark-grey: #4d4d4d;
+  --color-grey: #616161;
+  --color-light-grey: #7c7979;
+  --color-blue: #73aace;
+  --color-yellow: #fff7d1;
+  --color-orange: #feb546;
+  --color-black: #000000;
+
+  /* Font size */
+  --font-size-title: 130px;
+  --font-size-124: 124px;
+  --font-size-94: 94px;
+  --font-size-56: 56px;
+  --font-size-40: 40px;
+  --font-size-30: 30px;
+  --font-size-22: 22px;
+  --font-size-20: 20px;
+
+  /* Font weight */
+  --weight-bold: 700;
+  --weight-semi-bold: 600;
+  --weight-regular: 400;
+}
+
+/* Universal tags  */
+* {
+  box-sizing: border-box;
+}
+
+body {
+  position: relative;
+  font-family: "NanumSquare", sans-serif;
+  margin: 0;
+  cursor: default;
+  font-size: var(--font-size-20);
+}
+
+section {
+  max-width: 1800px;
+  margin: 0 auto;
+  padding: 0 50px;
+}
+
+a {
+  text-decoration: none;
+  color: var(--color-white);
+}
+
+ul {
+  padding-left: 0;
+  margin: 0;
+}
+
+li {
+  list-style: none;
+}
+
+p {
+  margin: 0;
+}
+
+button {
+  background-color: transparent;
+  cursor: pointer;
+  border: none;
+  outline: none;
+  padding: 0;
+  font-family: "NanumSquare", sans-serif;
+  font-weight: var(--weight-bold);
+  color: var(--color-black);
+}
+
+.hide {
+  display: none;
+}
+
+.fixed {
+  position: fixed;
+  top: 150px;
+}
